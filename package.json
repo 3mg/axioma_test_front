@@ -1,0 +1,32 @@
+{
+  "name": "axioma_test_front",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/3mg/axioma_test_front.git"
+  },
+  "author": "Nikolay Savchenko <3mg@bk.ru>",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "makeup": "^1.0.1",
+    "express": "^4.13.3",
+    "serve-favicon": "^2.3.0",
+    "morgan": "^1.6.1",
+    "cookie-parser": "^1.3.3",
+    "body-parser": "^1.13.3",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-nodemon": "^2.0.2",
+    "gulp-plumber": "^1.0.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}

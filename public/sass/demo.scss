@@ -1,0 +1,27 @@
+.makeup__container-markup {
+  background: rgba(0, 0, 0, 0);
+}
+
+.demoButtonList {
+  &, & > li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  & > li {
+    margin-bottom: 12.5px;
+    margin-left: 1px; // for shadow
+  }
+}
+
+.demoMainMenu {
+  .main-menu-item {
+    font: 16px Arial, sans-serif;
+    font-size: 16px;
+    line-height: 17px;
+  }
+
+  .main-menu-item:first-child {
+    padding-left: 0;
+  }
+}

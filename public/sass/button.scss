@@ -1,0 +1,45 @@
+@import "_mixins";
+@import "_colors";
+
+.button {
+  display: inline-block;
+  outline: none;
+  height: 28px;
+  padding: 0 7px 0 12px;
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.25);
+
+  font: 20.8px "Soho Gothic", Helvetica, Arial, sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
+
+  color: $button_text_color;
+
+  border: 1px solid;
+  border-radius: 3px;
+
+  border-color:
+          $button_normal_border_top_color
+          $button_normal_border_right_color
+          $button_normal_border_bottom_color
+          $button_normal_border_left_color
+  ;
+  @include linearGradient($button_normal_gradient_top_color, $button_normal_gradient_bottom_color);
+
+  &--hover, &:hover, &:focus {
+    border-color:
+            $button_hover_border_top_color
+            $button_hover_border_right_color
+            $button_hover_border_bottom_color
+            $button_hover_border_left_color
+    ;
+    @include linearGradient($button_hover_gradient_top_color, $button_hover_gradient_bottom_color);
+  }
+  &--press, &:active {
+    border-color:
+            $button_press_border_top_color
+            $button_press_border_right_color
+            $button_press_border_bottom_color
+            $button_press_border_left_color
+    ;
+    @include linearGradient($button_press_gradient_top_color, $button_press_gradient_bottom_color);
+  }
+}

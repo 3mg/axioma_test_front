@@ -1,0 +1,47 @@
+@import "_colors";
+
+.main-menu {
+  &, & > li {
+    list-style: none;
+  }
+  padding: 0;
+  margin: 0;
+
+  display: block;
+  background: rgba(0, 0, 0, 0);
+}
+
+.main-menu-item {
+  font: 15px "Soho Gothic", Helvetica, Arial, sans-serif;
+  line-height: 17px;
+
+  display: inline-block;
+  background: rgba(0, 0, 0, 0);
+
+  padding: 5px 7px;
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    color: $main_menu_text_color;
+    line-height: 17px;
+
+    &--hover, &:hover {
+      text-decoration: none;
+      border-bottom: 1px solid darken($main_menu_text_color, 10%);
+    }
+  }
+
+  &--active {
+    background-color: $main_menu_active_bg_color;
+  }
+  &--active &__link {
+    color: $main_menu_active_text_color;
+  }
+  &--active &__link--hover,
+  &--active &__link:hover {
+    text-decoration: none;
+    border-bottom: 1px solid darken($main_menu_active_text_color, 10%);
+  }
+}

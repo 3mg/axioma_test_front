@@ -1,0 +1,136 @@
+
+.button {
+  display: inline-block;
+  outline: none;
+  height: 28px;
+  padding: 0 7px 0 12px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+  font: 20.8px "Soho Gothic", Helvetica, Arial, sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
+  color: #fff;
+  border: 1px solid;
+  border-radius: 3px;
+  border-color: #b9e099 #64a935 #519427 #90c565;
+  background: #85c84e;
+  /* Old browsers */
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #85c84e), color-stop(100%, #71aa42));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #85c84e 0%, #71aa42 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, #85c84e 0%, #71aa42 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */ }
+  .button--hover, .button:hover, .button:focus {
+    border-color: #acd38c #529426 #43841c #84bb56;
+    background: #6fb238;
+    /* Old browsers */
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6fb238), color-stop(100%, #5e982f));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #6fb238 0%, #5e982f 100%);
+    /* Chrome10+,Safari5.1+ */
+    /* Opera 11.10+ */
+    /* IE10+ */
+    background: linear-gradient(to bottom, #6fb238 0%, #5e982f 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+    /* IE6-9 */ }
+  .button--press, .button:active {
+    border-color: #43831c #86b65e #acd38c #5ea22c;
+    background: #5d972f;
+    /* Old browsers */
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5d972f), color-stop(100%, #6eb238));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #5d972f 0%, #6eb238 100%);
+    /* Chrome10+,Safari5.1+ */
+    /* Opera 11.10+ */
+    /* IE10+ */
+    background: linear-gradient(to bottom, #5d972f 0%, #6eb238 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+    /* IE6-9 */ }
+
+.makeup__container-markup {
+  background: transparent; }
+
+.demoButtonList, .demoButtonList > li {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.demoButtonList > li {
+  margin-bottom: 12.5px;
+  margin-left: 1px; }
+
+.demoMainMenu .main-menu-item {
+  font: 16px Arial, sans-serif;
+  font-size: 16px;
+  line-height: 17px; }
+
+.demoMainMenu .main-menu-item:first-child {
+  padding-left: 0; }
+
+@font-face {
+  font-family: 'Soho Gothic';
+  src: url("../fonts/defaultgothicbgauge-webfont.eot");
+  src: url("../fonts/defaultgothicbgauge-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/defaultgothicbgauge-webfont.woff") format("woff"), url("../fonts/defaultgothicbgauge-webfont.ttf") format("truetype"), url("../fonts/defaultgothicbgauge-webfont.svg") format("svg"); }
+
+
+.main-menu {
+  padding: 0;
+  margin: 0;
+  display: block;
+  background: transparent; }
+  .main-menu, .main-menu > li {
+    list-style: none; }
+
+.main-menu-item {
+  font: 15px "Soho Gothic", Helvetica, Arial, sans-serif;
+  line-height: 17px;
+  display: inline-block;
+  background: transparent;
+  padding: 5px 7px; }
+  .main-menu-item__link {
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    color: #468fc5;
+    line-height: 17px; }
+    .main-menu-item__link--hover, .main-menu-item__link:hover {
+      text-decoration: none;
+      border-bottom: 1px solid #3474a4; }
+  .main-menu-item--active {
+    background-color: #d5d5d5; }
+  .main-menu-item--active .main-menu-item__link {
+    color: #5a5a59; }
+  .main-menu-item--active .main-menu-item__link--hover,
+  .main-menu-item--active .main-menu-item__link:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #404040; }
+
+@font-face {
+  font-family: 'Soho Gothic';
+  src: url("../fonts/defaultgothicbgauge-webfont.eot");
+  src: url("../fonts/defaultgothicbgauge-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/defaultgothicbgauge-webfont.woff") format("woff"), url("../fonts/defaultgothicbgauge-webfont.ttf") format("truetype"), url("../fonts/defaultgothicbgauge-webfont.svg") format("svg"); }
+
+body {
+  padding: 50px;
+  font: 15px "Soho Gothic", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+
+/*# sourceMappingURL=style.css.map */
