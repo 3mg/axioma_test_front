@@ -19,11 +19,14 @@ gulp.task('sass', function () {
         .pipe(livereload());
 });
 gulp.task('makeup', function () {
-    gulp.src('../node_modules/makeup/dist/*').pipe(gulp.dest('./public/js/vendor/makeup/'));
+    gulp.src('./node_modules/makeup/dist/*').pipe(gulp.dest('./public/js/vendor/makeup/'));
+});
+gulp.task('normalize', function () {
+    gulp.src('./node_modules/normalize.css/normalize.css').pipe(gulp.dest('./public/css/vendor/'));
 });
 
 gulp.task('watch', function () {
-    gulp.watch('./public/sass/*.scss', ['sass']);
+    gulp.watch(['./public/sass/*.scss', './public/index.html', './public/js/data.js'], ['sass']);
 });
 
 gulp.task('develop', function () {
@@ -44,6 +47,7 @@ gulp.task('develop', function () {
 });
 
 gulp.task('default', [
+    'normalize',
     'makeup',
     'sass',
     'develop',

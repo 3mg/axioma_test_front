@@ -1,0 +1,43 @@
+@import "_colors";
+
+$arrow_in_circle_color_1: rgba(0, 0, 0, 0.47);
+$arrow_in_circle_color_2: rgba(0, 0, 0, 0.75);
+$arrow_in_circle_hover_color: #4e97c9;
+$arrow_in_circle_border_color: #aaa;
+
+$arrow_in_circle_size: 48px;
+$arrow_in_circle_border_width: 2px;
+
+.arrow-in-circle {
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 3px 0 $arrow_in_circle_color_1;
+  width: $arrow_in_circle_size + $arrow_in_circle_border_width * 2;
+  height: $arrow_in_circle_size + $arrow_in_circle_border_width * 2;
+
+  border: $arrow_in_circle_border_width $arrow_in_circle_border_color solid;
+  box-sizing: border-box;
+
+  position: relative;
+
+  &__image {
+    z-index: 1;
+
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  }
+  &--hover, &:hover {
+    border-color: $arrow_in_circle_hover_color;
+    box-shadow: 0 0 4px 0 $arrow_in_circle_hover_color;
+  }
+  &--click, &:active {
+    background-color: lighten($arrow_in_circle_hover_color, 39%);
+    border-color: $arrow_in_circle_hover_color;
+    box-shadow: 0 0 4px 0 $arrow_in_circle_hover_color;
+  }
+}
+

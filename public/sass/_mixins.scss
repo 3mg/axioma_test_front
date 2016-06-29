@@ -8,3 +8,30 @@
   background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
+
+$page_widths: 900, 800, 700, 600, 400, 320, 280;
+@mixin responsive($target_w) {
+  @for $i from 1 through length($page_widths) - 1 {
+    $w: nth($page_widths, $i);
+    $next_w: nth($page_widths, $i + 1);
+    $next_w_max: $w - 1;
+
+    @if ($w <= $target_w) {
+      .w#{$w} &{
+        @content;
+      }
+    }
+    @if($w == $target_w) {
+      @media screen and (max-width: #{$next_w_max}px) {
+        @content;
+      }
+    }
+  }
+}
+
+/*
+@mixin make-row($columns) {
+  .row-{$columns} {
+
+  }
+}*/

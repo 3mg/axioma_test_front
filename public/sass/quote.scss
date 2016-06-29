@@ -1,0 +1,167 @@
+@import "_colors";
+@import "_mixins";
+
+.quote-box {
+  width: 248px;
+  @include responsive(600) {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  padding: 15px 20px;
+
+  background-color: white;
+  font: 15px "Soho Gothic Pro", Arial, sans-serif;
+
+  &__header {
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100%;
+    padding-right: 15px;
+
+    color: $quote_box_header_color;
+    font-weight: 700;
+
+    margin-bottom: 29px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 35px;
+      background-image: url('/img/line_with_circle.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &__content {
+
+  }
+}
+
+.quote-form {
+  &__submit {
+    font: 12.59px "Soho Gothic Pro";
+    margin-top: 10px;
+    text-align: right;
+  }
+  &__links {
+    font: 12px "Tahoma";
+    margin-top: -7px;
+    text-align: right;
+  }
+}
+.quote-form-link {
+  color: #336699;
+}
+
+.form-group {
+  &--pusher {
+    padding-top: 5px;
+  }
+
+  &__label {
+    font: 11px "Soho Gothic Pro";
+    display: block;
+    margin-bottom: 2px;
+    &:after {
+      content: ":";
+    }
+  }
+  &__form-control {
+    margin-bottom: 7px;
+    font: 14px "Tahoma";
+    line-height: 100%;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #c4c4c4;
+    border-radius: 3px;
+    padding: 7px 7px;
+    outline: none;
+
+    &--error {
+      border-color: #e98c8c;
+    }
+
+    &--focus, &:focus {
+      border-color: #7f7f7f;
+    }
+  }
+
+  textarea.form-group__form-control {
+    min-height: 75px;
+    resize: none;
+  }
+
+  &__help-block {
+    font: 14px "Tahoma";
+    border-radius: 3px;
+    padding: 10px 10px 7px 10px;
+    line-height: 150%;
+    margin: 10px 0 15px 0;
+
+    &--error {
+      background-color: #f9e0e0;
+    }
+    &--success {
+      background-color: #ddeece;
+    }
+  }
+  &__help-block-header {
+    font: 14px "Tahoma";
+    display: block;
+    margin-bottom: 7px;
+    line-height: 100%;
+  }
+  &__help-block--error &__help-block-header {
+    color: #c80000;
+  }
+  &__help-block--success &__help-block-header {
+    color: #3a750b;
+  }
+}
+
+
+.quote {
+  &__header {
+    color: #000;
+    font: 13px "Soho Gothic Pro";
+    font-weight: 700;
+  }
+  &__subheader {
+    color: #646464;
+    font: 11px "Soho Gothic Pro";
+    line-height: 200%;
+    font-weight: 200;
+  }
+  &__body {
+    padding-left: 40px;
+    position: relative;
+    font: 12px "Tahoma";
+    color: #000;
+    padding-top: 10px;
+    line-height: 150%;
+    margin: 5px 0 15px 0;
+
+    &:before {
+      content: "“";
+      color: #b2b2b2;
+      font: 57.49px "Stencil D";
+      position: absolute;
+      top: 0;
+      left: -2px;
+      width: 40px;
+      line-height: 50%;
+    }
+  }
+  &__link {
+    text-align: right;
+    &, .button {
+      font: 12.59px "Soho Gothic Pro";
+      line-height: 200%;
+    }
+  }
+}

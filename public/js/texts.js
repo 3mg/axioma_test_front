@@ -29,15 +29,15 @@ var texts = {
         "send": "SEND",
         "send_again": "SEND AGAIN",
         "send_another": "Send another message",
-        "thanks": "Thank ypu!",
+        "thanks": "Thank you!",
         "success_description": "Description text goes here, please pay attention to line-height and paragraph paddings."
     },
 
-    "qoute": {
+    "quote": {
         "title": "Client testimonials",
         "name": "Jeff Richards",
         "company": "YellowPages Company",
         "body": "We were and still are on a mission to change the world as we know it. Six years and lots of blood, sweat, and tears later, we know how.",
-        "learn_more": "Learn More"
+        "learn_more": "Lear More"
     }
 };

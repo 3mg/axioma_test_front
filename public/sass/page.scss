@@ -1,10 +1,66 @@
 @import "fonts";
+@import "_colors";
+@import "_mixins";
 
 body {
-  padding: 50px;
-  font: 15px "Soho Gothic", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font: 15px "Soho Gothic Pro", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: $main-blue;
+}
+
+.page {
+  padding: 30px 0;
+  background-color: #fff;
+}
+
+.page-lead {
+
+}
+.page-paragraph {
+
+}
+.page-callout {
+
+}
+.page-phone-number {
+  &__prefix {
+
+  }
+}
+
+.page-container {
+  margin: 0 auto;
+  width: 916px;
+  padding: 0 30px;
+
+  @media screen and (max-width: 984px) {
+    width: 900px;
+  }
+
+  @for $i from 1 through length($page_widths) - 1 {
+    $w: nth($page_widths, $i);
+    $next_w: nth($page_widths, $i + 1);
+    $next_w_max: $w - 1;
+
+    @media screen and (max-width: #{$next_w_max}px) {
+      width: #{$next_w}px;
+    }
+
+    &.w#{$w} {
+      width: #{$next_w}px!important;
+    }
+  }
+
+  @media screen and (max-width: 399px) {
+    padding: 0 15px;
+  }
+
+  @media screen and (max-width: 279px) {
+    width: 280px;
+    padding: 2px;
+  }
 }

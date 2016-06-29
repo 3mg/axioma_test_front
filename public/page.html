@@ -3,69 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/css/vendor/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-    <header class="header">
-        <div class="header__logo">
-            <div class="header-logo">
-                <img class="header-logo__img" src="" alt="">
-                <span class="header-logo__span"></span>
+<body class="page">
+    <div class="page-container">
+        <header class="header">
+            <div class="header__logo">
+                <div class="header-logo">
+                    <img class="header-logo__img" src="" alt="">
+                    <span class="header-logo__span"></span>
+                </div>
             </div>
-        </div>
-        <nav class="header__nav">
-            <ul class="main-menu">
-                <li class="main-menu__item">
-                    <a class="main-menu__link" href="#">{{ menu_home }}</a>
-                </li>
-                <li class="main-menu__item--active">
-                    <a class="main-menu__link" href="#">{{ menu_services }}</a>
-                </li>
-                <li class="main-menu__item">
-                    <a class="main-menu__link--hover" href="#">{{ menu_company }}</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section class="subheader">
-        <div class="subheader__title"></div>
-        <div class="subheader__app-links"></div>
-    </section>
-    <section class="row-3">
-        <article class="col-2">
-            <p class="page-paragraph"></p>
-            <p class="page-paragraph"></p>
-            <p class="page-lead"></p>
-            <p class="page-paragraph"></p>
-            <p class="page-paragraph"></p>
-            <p class="page-paragraph"></p>
-            <div class="page-callout">
-                <span></span>
+            <nav class="header__nav">
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">{{ menu_home }}</a>
+                    </li>
+                    <li class="main-menu__item--active">
+                        <a class="main-menu__link" href="#">{{ menu_services }}</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link--hover" href="#">{{ menu_company }}</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="subheader">
+            <div class="subheader__title"></div>
+            <div class="subheader__app-links"></div>
+        </section>
+        <section class="row-3">
+            <article class="col-2">
+                <p class="page-paragraph"></p>
+                <p class="page-paragraph"></p>
+                <p class="page-lead"></p>
+                <p class="page-paragraph"></p>
+                <p class="page-paragraph"></p>
+                <p class="page-paragraph"></p>
+                <div class="page-callout">
+                    <span></span>
                 <span class="page-phone-number">
                     <span class="page-phone-number__prefix"></span>
                 </span>
-                <span></span>
-            </div>
-        </article>
-        <aside class="col-1">
+                    <span></span>
+                </div>
+            </article>
+            <aside class="col-1">
 
-        </aside>
-    </section>
-    <footer class="footer row-3">
-        <nav class="footer__nav">
-            <ul class="main-menu">
-                <li class="main-menu__item">
-                    <a class="main-menu__link" href="#">{{ menu_home }}</a>
-                </li>
-                <li class="main-menu__item--active">
-                    <a class="main-menu__link" href="#">{{ menu_services }}</a>
-                </li>
-                <li class="main-menu__item">
-                    <a class="main-menu__link" href="#">{{ menu_company }}</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="ooter__copyright"></div>
-        <div class="ooter__social"></div>
-    </footer>
+            </aside>
+        </section>
+        <footer class="footer row-3">
+            <nav class="footer__nav">
+                <ul class="main-menu">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">{{ menu_home }}</a>
+                    </li>
+                    <li class="main-menu__item--active">
+                        <a class="main-menu__link" href="#">{{ menu_services }}</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">{{ menu_company }}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="ooter__copyright"></div>
+            <div class="ooter__social"></div>
+        </footer>
+    </div>
 </body>
 </html>

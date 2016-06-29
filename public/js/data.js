@@ -14,9 +14,9 @@ function $$makeComponentsItems() {
         "Submenu",
         "Request for quote",
         "Main menu",
-        "Logo",
+        "Button",
         "Quote",
-        "Social"
+        "Header"
     ];
     [
         "arrow",
@@ -24,9 +24,8 @@ function $$makeComponentsItems() {
         "request_for_quote",
         "main_menu",
         "button",
-        "logo",
         "quote",
-        "social"
+        "header"
     ].forEach(function(component, idx) {
         items.push({
             name: component,
@@ -39,7 +38,7 @@ function $$makeComponentsItems() {
 function $$makeFullPageModules() {
     var modules = [];
 
-    [1600, 1200, 1000, 900, 800, 700, 600, 400, 320, 280].forEach(function(width) {
+    [1600, 1280, 1024, 900, 800, 700, 600, 400, 320, 280].forEach(function(width) {
         modules.push({
             name: 'full page ' + width,
             type: 'module',

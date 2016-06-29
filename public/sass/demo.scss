@@ -11,17 +11,50 @@
   & > li {
     margin-bottom: 12.5px;
     margin-left: 1px; // for shadow
+
+    .button {
+      font: 16.59px "Soho Gothic Pro", Helvetica, Arial, sans-serif;
+      line-height: 26px;
+    }
   }
 }
 
 .demoMainMenu {
   .main-menu-item {
-    font: 16px Arial, sans-serif;
-    font-size: 16px;
+    font: 15px "Soho Gothic Pro";
     line-height: 17px;
   }
 
   .main-menu-item:first-child {
     padding-left: 0;
+  }
+}
+
+.demoHeader {
+  background-color: white;
+  width: 1280px;
+}
+
+.demoArrows{
+  //background-color: #ffffff;
+  padding: 22px;
+  margin: -20px;
+
+  .arrow-in-circle {
+    margin-bottom: 8px;
+  }
+}
+
+.demoQuote {
+  width: 250px;
+}
+
+.demoForms {
+  min-width: 1200px;
+  background-color: rgba(0,0,0,0);
+  .demoForm {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: top;
   }
 }
