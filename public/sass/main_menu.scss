@@ -23,7 +23,6 @@
     }
   }
   &--listable {
-    display: none;
     @include responsive(700) {
       display: block;
       .main-menu-item {
