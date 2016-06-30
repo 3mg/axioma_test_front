@@ -24,14 +24,16 @@ $logo-height: 55px;
   &__nav {
     float: right;
     padding: 13px 0;
-    margin-right: -10px;
+
     .main-menu {
+      margin-right: -5px;
     }
   }
 }
 
 .header-logo {
   height: $logo-height;
+  padding: 0 0 0 3px;
 
   &__img {
     display: inline-block;
@@ -42,7 +44,7 @@ $logo-height: 55px;
     height: $logo-height;
     line-height: 100%;
     vertical-align: top;
-    padding: 7px 5px 5px 3px;
+    padding: 8px 5px 5px 5px;
 
     font: 22.94px "Soho Gothic Pro", Arial, sens-serif;
     color: $logo-color;
@@ -69,7 +71,10 @@ $logo-height: 55px;
   margin-right: -10px;
   display: table;
   width: 100%;
-  padding-bottom: 10px;
+
+  padding-bottom: 9px;
+  padding-left: 4px;
+
   box-sizing: border-box;
 
   &__title{
@@ -94,7 +99,7 @@ $app-links-bg-color: #e7e6e6;
 .app-links-container {
   background-color: $app-links-bg-color;
   height: 120px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 
   @include responsive(700) {
     height: auto;
@@ -162,7 +167,7 @@ $app-links-bg-color: #e7e6e6;
   $app-link-border-width: 3px;
 
   &__img {
-    margin-top: -25px;
+    margin-top: -20px;
     margin-bottom: $app-link-border-width;
     overflow: hidden;
 
@@ -184,7 +189,7 @@ $app-links-bg-color: #e7e6e6;
     }
 
     .app-link--hover &, .app-link:hover & {
-      margin-top: -25px - $app-link-border-width;
+      margin-top: -20px - $app-link-border-width;
       margin-bottom: 0;
 
       width: $app-link-size + 2 * $app-link-border-width;

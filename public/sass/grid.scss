@@ -18,19 +18,16 @@ $col-padding: 15px;
   width: 100%;
   box-sizing: border-box;
 
-  margin-left: -$col-padding;
-  margin-right: -$col-padding;
-
   .col-1, .col-2 {
-    padding: 0 $col-padding;
     box-sizing: border-box;
     display: table-cell;
   }
   .col-1 {
-    width: 33%;
+    padding: 0 5px;
   }
   .col-2 {
-    width: 66%;
+    width: 100%;
+    padding-right: 40px;
   }
 
   @media screen and (max-width: 699px) {
@@ -45,6 +42,7 @@ $col-padding: 15px;
     .col-1, .col-2 {
       display: block;
       width: 100%;
+      padding: 0 5px;
     }
   }
   @media screen and (max-width: 399px) {

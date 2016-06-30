@@ -47,6 +47,9 @@
 
 .demoQuote {
   width: 250px;
+  .quote-box {
+    padding: 15px 20px;
+  }
 }
 
 .demoForms {
@@ -56,5 +59,9 @@
     display: inline-block;
     margin-right: 15px;
     vertical-align: top;
+  }
+
+  .quote-box {
+    padding: 15px 20px;
   }
 }

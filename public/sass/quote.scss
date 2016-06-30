@@ -3,12 +3,14 @@
 
 .quote-box {
   width: 248px;
+  margin-bottom: 20px;
+
   @include responsive(600) {
     width: 100%;
     box-sizing: border-box;
   }
 
-  padding: 15px 20px;
+  padding: 15px 0;
 
   background-color: white;
   font: 15px "Soho Gothic Pro", Arial, sans-serif;
@@ -17,7 +19,8 @@
     text-transform: uppercase;
     text-align: center;
     line-height: 100%;
-    padding-right: 15px;
+    padding-right: 10px;
+    letter-spacing: 0.8px;
 
     color: $quote_box_header_color;
     font-weight: 700;
@@ -128,7 +131,7 @@
 .quote {
   &__header {
     color: #000;
-    font: 13px "Soho Gothic Pro";
+    font: 14px "Soho Gothic Pro Medium", Arial, sans-serif;
     font-weight: 700;
   }
   &__subheader {
@@ -138,21 +141,20 @@
     font-weight: 200;
   }
   &__body {
-    padding-left: 40px;
+    padding: 7px 0 0 42px;
     position: relative;
     font: 12px "Tahoma";
     color: #000;
-    padding-top: 10px;
     line-height: 150%;
     margin: 5px 0 15px 0;
 
     &:before {
       content: "“";
       color: #b2b2b2;
-      font: 57.49px "Stencil";
+      font: 70px "Stencil";
       position: absolute;
-      top: 0;
-      left: -2px;
+      top: 5px;
+      left: 0;
       width: 40px;
       line-height: 50%;
     }

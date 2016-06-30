@@ -18,7 +18,7 @@ gulp.task('sass', function () {
         .pipe(concat('style.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./public/css'))
-        .pipe(livereload());
+        /*.pipe(livereload())*/;
 });
 gulp.task('makeup', function () {
     gulp.src('./node_modules/makeup/dist/*').pipe(gulp.dest('./public/js/vendor/makeup/'));

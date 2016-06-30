@@ -121,6 +121,8 @@
 
 .demoQuote {
   width: 250px; }
+  .demoQuote .quote-box {
+    padding: 15px 20px; }
 
 .demoForms {
   min-width: 1200px;
@@ -129,6 +131,8 @@
     display: inline-block;
     margin-right: 15px;
     vertical-align: top; }
+  .demoForms .quote-box {
+    padding: 15px 20px; }
 
 /*
 @font-face {
@@ -171,20 +175,33 @@
 }*/
 .footer {
   background-color: #ebebeb;
-  margin-top: 25px;
+  background-image: -webkit-linear-gradient(top, #f3f3f3 3px, #ebebeb 10px);
+  background-image: linear-gradient(to bottom, #f3f3f3 3px, #ebebeb 10px);
+  border-top: 1px solid #e9e9e9;
+  margin-top: 15px;
   padding: 20px 0; }
-  .footer__nav .main-menu {
-    font: 12px "Soho Gothic Pro";
-    font-weight: 400; }
+  .footer__nav {
+    margin-left: -10px; }
+    .footer__nav .main-menu, .footer__nav .main-menu-item {
+      font: 12px "Soho Gothic Pro";
+      font-weight: 400; }
+    .footer__nav .main-menu-item {
+      padding: 5px 10px; }
+      .footer__nav .main-menu-item--active {
+        background-color: #d5d5d5;
+        padding: 5px 7px; }
   .footer__copyright {
     font: 12px "Soho Gothic Pro Light";
-    color: #5a5a59; }
+    color: #5a5a59;
+    white-space: nowrap; }
   .footer__social {
-    margin-top: 20px; }
+    margin-left: -10px;
+    margin-top: 10px; }
 
 .social-link {
   display: inline-block;
-  height: 33px; }
+  height: 33px;
+  margin-right: 10px; }
 
 /*
 @mixin make-row($columns) {
@@ -205,17 +222,15 @@
   }*/
   display: table;
   width: 100%;
-  box-sizing: border-box;
-  margin-left: -15px;
-  margin-right: -15px; }
+  box-sizing: border-box; }
   .row-3 .col-1, .row-3 .col-2 {
-    padding: 0 15px;
     box-sizing: border-box;
     display: table-cell; }
   .row-3 .col-1 {
-    width: 33%; }
+    padding: 0 5px; }
   .row-3 .col-2 {
-    width: 66%; }
+    width: 100%;
+    padding-right: 40px; }
   @media screen and (max-width: 699px) {
     .row-3 {
       display: block; }
@@ -226,7 +241,8 @@
     display: block; }
     .w600 .row-3 .col-1, .w600 .row-3 .col-2, .w400 .row-3 .col-1, .w400 .row-3 .col-2, .w320 .row-3 .col-1, .w320 .row-3 .col-2, .w280 .row-3 .col-1, .w280 .row-3 .col-2 {
       display: block;
-      width: 100%; }
+      width: 100%;
+      padding: 0 5px; }
   @media screen and (max-width: 399px) {
     .row-3 {
       margin: -7.5px; }
@@ -264,11 +280,13 @@
     float: left; }
   .header__nav {
     float: right;
-    padding: 13px 0;
-    margin-right: -10px; }
+    padding: 13px 0; }
+    .header__nav .main-menu {
+      margin-right: -5px; }
 
 .header-logo {
-  height: 55px; }
+  height: 55px;
+  padding: 0 0 0 3px; }
   .header-logo__img {
     display: inline-block;
     height: 55px; }
@@ -277,7 +295,7 @@
     height: 55px;
     line-height: 100%;
     vertical-align: top;
-    padding: 7px 5px 5px 3px;
+    padding: 8px 5px 5px 5px;
     font: 22.94px "Soho Gothic Pro", Arial, sens-serif;
     color: rgba(23, 20, 18, 0.5);
     text-transform: uppercase; }
@@ -315,7 +333,8 @@
   margin-right: -10px;
   display: table;
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
+  padding-left: 4px;
   box-sizing: border-box; }
   .subheader__title {
     font: 31px "Soho Gothic Pro", Arial, sens-serif;
@@ -341,7 +360,7 @@
 .app-links-container {
   background-color: #e7e6e6;
   height: 120px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   position: relative; }
   @media screen and (max-width: 699px) {
     .app-links-container {
@@ -435,7 +454,7 @@
   .w280 .app-link {
     margin-bottom: 10px; }
   .app-link__img {
-    margin-top: -25px;
+    margin-top: -20px;
     margin-bottom: 3px;
     overflow: hidden;
     display: inline-block;
@@ -473,7 +492,7 @@
       height: 30px;
       box-sizing: border-box; }
     .app-link--hover .app-link__img, .app-link:hover .app-link__img {
-      margin-top: -28px;
+      margin-top: -23px;
       margin-bottom: 0;
       width: 106px;
       height: 106px;
@@ -719,30 +738,32 @@ a {
 .page-paragraph, .page-lead {
   font: 15px "Tahoma";
   font-weight: 400;
-  margin: 15px 0;
+  margin: 12px 0;
   line-height: 120%;
   color: #333; }
 
 .page-lead {
   font: 16.59px "Soho Gothic Pro Medium";
   text-align: center;
-  padding: 25px 25px;
+  padding: 1px 25px 1px 20px;
+  margin: 30px 0;
   color: #333; }
 
 .page-callout {
   margin: 0 35px;
   border-radius: 3px;
-  padding: 20px;
-  margin: 15px 0;
+  padding: 15px 30px;
   background-color: #4e97c9;
-  font: 16.59px "Soho Gothic Pro Medium";
+  font: 17px "Soho Gothic Pro Medium";
+  line-height: 160%;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
   text-align: center; }
 
 .page-phone-number {
   text-decoration: none;
-  font: 16.59px "Soho Gothic Pro Medium";
+  font: 17px "Soho Gothic Pro Medium";
+  line-height: 160%;
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
   padding: 0 5px;
@@ -767,7 +788,7 @@ a {
 
 .page-container {
   margin: 0 auto;
-  width: 916px;
+  width: 925px;
   padding: 0 30px; }
   @media screen and (max-width: 984px) {
     .page-container {
@@ -824,7 +845,8 @@ a {
 }*/
 .quote-box {
   width: 248px;
-  padding: 15px 20px;
+  margin-bottom: 20px;
+  padding: 15px 0;
   background-color: white;
   font: 15px "Soho Gothic Pro", Arial, sans-serif; }
   @media screen and (max-width: 599px) {
@@ -844,7 +866,8 @@ a {
     text-transform: uppercase;
     text-align: center;
     line-height: 100%;
-    padding-right: 15px;
+    padding-right: 10px;
+    letter-spacing: 0.8px;
     color: #468fc5;
     font-weight: 700;
     margin-bottom: 29px;
@@ -927,7 +950,7 @@ a {
 
 .quote__header {
   color: #000;
-  font: 13px "Soho Gothic Pro";
+  font: 14px "Soho Gothic Pro Medium", Arial, sans-serif;
   font-weight: 700; }
 
 .quote__subheader {
@@ -937,20 +960,19 @@ a {
   font-weight: 200; }
 
 .quote__body {
-  padding-left: 40px;
+  padding: 7px 0 0 42px;
   position: relative;
   font: 12px "Tahoma";
   color: #000;
-  padding-top: 10px;
   line-height: 150%;
   margin: 5px 0 15px 0; }
   .quote__body:before {
     content: "“";
     color: #b2b2b2;
-    font: 57.49px "Stencil";
+    font: 70px "Stencil";
     position: absolute;
-    top: 0;
-    left: -2px;
+    top: 5px;
+    left: 0;
     width: 40px;
     line-height: 50%; }
 
