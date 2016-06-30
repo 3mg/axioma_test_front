@@ -68,6 +68,7 @@ a {
   margin: 0 auto;
   width: 925px;
   padding: 0 30px;
+  box-sizing: border-box;
 
   @media screen and (max-width: 984px) {
     width: 900px;
