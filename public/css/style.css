@@ -437,6 +437,7 @@
   .app-link__img {
     margin-top: -25px;
     margin-bottom: 3px;
+    overflow: hidden;
     display: inline-block;
     border-radius: 50%;
     background-color: #fff;

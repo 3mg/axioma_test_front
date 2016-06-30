@@ -164,6 +164,7 @@ $app-links-bg-color: #e7e6e6;
   &__img {
     margin-top: -25px;
     margin-bottom: $app-link-border-width;
+    overflow: hidden;
 
     display: inline-block;
     border-radius: 50%;
