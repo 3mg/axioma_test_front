@@ -1,18 +1,11 @@
 @import "_mixins";
 @import "_colors";
 
-$subheader_container_border_top_color: #2d79ad;
-$subheader_gradient_top_color: #7ac1de;
-$subheader_gradient_bottom_color: #4089c2;
-
-.subheader-container {
+.submenu-container {
   display: block;
   border-top: 1px solid $subheader_container_border_top_color;
   @include linearGradient($subheader_gradient_top_color, $subheader_gradient_bottom_color);
-}
 
-.submenu-container {
-  @extend .subheader-container;
   padding: 15px 25px;
 }
 

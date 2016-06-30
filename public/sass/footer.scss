@@ -1,19 +1,26 @@
 @import "_mixins";
 @import "_colors";
 .footer {
+  background-color: #ebebeb;
+  margin-top: 25px;
+  padding: 20px 0;
+
   &__nav {
     .main-menu {
-
+      font: 12px "Soho Gothic Pro";
+      font-weight: 400;
     }
   }
   &__copyright {
-
+    font: 12px "Soho Gothic Pro Light";
+    color: #5a5a59;
   }
   &__social {
-
+    margin-top: 20px;
   }
 }
 
 .social-link {
-
+  display: inline-block;
+  height: 33px;
 }

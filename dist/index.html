@@ -182,15 +182,15 @@
                 <div class="header__logo">
                     <div class="header-logo">
                         <img class="header-logo__img" src="img/DOT.png" alt="logo">
-                        <span class="header-logo__text">{{ logo }}</span>
+                        <span class="header-logo__span">{{ logo }}</span>
                     </div>
                 </div>
                 <nav class="header__nav">
                     <ul class="main-menu">
-                        <li class="main-menu-item main-menu-item--active">
+                        <li class="main-menu-item">
                             <a class="main-menu-item__link" href="#">{{ menu_home }}</a>
                         </li>
-                        <li class="main-menu-item">
+                        <li class="main-menu-item main-menu-item--active">
                             <a class="main-menu-item__link" href="#">{{ menu_services }}</a>
                         </li>
                         <li class="main-menu-item">
@@ -214,39 +214,32 @@
             </div>
         </div>
         <div class="app-links-container">
-            <div class="app-links-container__shadow"></div>
             <div class="page-container">
                 <section class="app-links">
-                    <div class="app-links__element">
-                        <a href="#" class="app-link app-link--hover">
-                            <span class="app-link__img">
-                                <img src="/img/buseness_apps.png" alt="">
-                            </span>
-                            <span class="app-link__title">
-                                {{ category1 }}
-                            </span>
-                        </a>
-                    </div>
-                    <div class="app-links__element">
-                        <a href="#" class="app-link">
-                            <span class="app-link__img">
-                                <img src="/img/entertaiment_apps.png" alt="">
-                            </span>
-                            <span class="app-link__title">
-                                {{ category2 }}
-                            </span>
-                        </a>
-                    </div>
-                    <div class="app-links__element">
-                        <a href="#" class="app-link">
-                            <span class="app-link__img">
-                                <img src="/img/gaming_apps.png" alt="">
-                            </span>
-                            <span class="app-link__title">
-                                {{ category3 }}
-                            </span>
-                        </a>
-                    </div>
+                    <a href="#" class="app-link">
+                        <span class="app-link__img">
+                            <img src="/img/buseness_apps.png" alt="">
+                        </span>
+                        <span class="app-link__title">
+                            {{ category1 }}
+                        </span>
+                    </a>
+                    <a href="#" class="app-link">
+                        <span class="app-link__img">
+                            <img src="/img/entertaiment_apps.png" alt="">
+                        </span>
+                        <span class="app-link__title">
+                            {{ category2 }}
+                        </span>
+                    </a>
+                    <a href="#" class="app-link">
+                        <span class="app-link__img">
+                            <img src="/img/gaming_apps.png" alt="">
+                        </span>
+                        <span class="app-link__title">
+                            {{ category3 }}
+                        </span>
+                    </a>
                 </section>
             </div>
         </div>
@@ -378,22 +371,15 @@
                 <div class="header__logo">
                     <div class="header-logo">
                         <img class="header-logo__img" src="img/DOT.png" alt="logo">
-                        <span class="header-logo__text">{{ logo }}</span>
+                        <span class="header-logo__span">{{ logo }}</span>
                     </div>
                 </div>
                 <nav class="header__nav">
-                    <ul class="main-menu main-menu--sandwich">
+                    <ul class="main-menu">
                         <li class="main-menu-item">
-                            <a class="main-menu-item__link" href="#">
-                                Menu
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="main-menu main-menu--collapsable">
-                        <li class="main-menu-item main-menu-item--active">
                             <a class="main-menu-item__link" href="#">{{ menu_home }}</a>
                         </li>
-                        <li class="main-menu-item">
+                        <li class="main-menu-item main-menu-item--active">
                             <a class="main-menu-item__link" href="#">{{ menu_services }}</a>
                         </li>
                         <li class="main-menu-item">
@@ -409,154 +395,108 @@
                 </nav>
             </header>
         </div>
-        <div class="subheader-container">
-            <div class="page-container">
-                <section class="subheader">
-                    <div class="subheader__title">{{ header }}</div>
-                </section>
+        <section class="subheader">
+            <div class="subheader__title">{{ header }}</div>
+            <div class="subheader__app-links">
+                {{ category1 }}
+                {{ category2 }}
+                {{ category3 }}
             </div>
-        </div>
-        <div class="app-links-container">
-            <div class="app-links-container__shadow"></div>
-            <div class="page-container">
-                <section class="app-links">
-                    <div class="app-links__element">
-                        <a href="#" class="app-link app-link--hover">
-                            <span class="app-link__img">
-                                <img src="/img/buseness_apps.png" alt="">
-                            </span>
-                            <span class="app-link__title">
-                                {{ category1 }}
-                            </span>
-                        </a>
-                    </div>
-                    <div class="app-links__element">
-                        <a href="#" class="app-link">
-                            <span class="app-link__img">
-                                <img src="/img/entertaiment_apps.png" alt="">
-                            </span>
-                            <span class="app-link__title">
-                                {{ category2 }}
-                            </span>
-                        </a>
-                    </div>
-                    <div class="app-links__element">
-                        <a href="#" class="app-link">
-                            <span class="app-link__img">
-                                <img src="/img/gaming_apps.png" alt="">
-                            </span>
-                            <span class="app-link__title">
-                                {{ category3 }}
-                            </span>
-                        </a>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <div class="page-container">
-            <section class="row-3">
-                <article class="col-2">
-                    <p class="page-paragraph">{{ p1 }}</p>
-                    <p class="page-paragraph">{{ p2 }}</p>
-                    <p class="page-lead">{{ p3_1 }}<br>{{ p3_2 }}</p>
-                    <p class="page-paragraph">{{ p4 }}</p>
-                    <p class="page-paragraph">{{ p5 }}</p>
-                    <p class="page-paragraph">{{ p6 }}</p>
-                    <div class="page-callout">
-                        <span>{{ call1 }}</span>
+        </section>
+        <section class="row-3">
+            <article class="col-2">
+                <p class="page-paragraph">{{ p1 }}</p>
+                <p class="page-paragraph">{{ p2 }}</p>
+                <p class="page-lead">{{ p3 }}</p>
+                <p class="page-paragraph">{{ p4 }}</p>
+                <p class="page-paragraph">{{ p5 }}</p>
+                <p class="page-paragraph">{{ p6 }}</p>
+                <div class="page-callout">
+                    <span>{{ call1 }}</span>
                     <span class="page-phone-number">
                         <span class="page-phone-number__prefix">{{ phone_prefix }}</span> {{ phone_number }}
                     </span>
-                        <span>{{ call2 }}</span>
-                    </div>
-                </article>
-                <aside class="col-1">
-                    <div class="quote-box">
-                        <div class="quote-box__header">{{ form.title }}</div>
-                        <div class="quote-box__content">
-                            <form class="quote-form">
-                                <!--  Yep, bootstrap style -->
-                                <div class="form-group form-group">
-                                    <label class="form-group__label" for="name1">{{ form.name }}</label>
-                                    <input
-                                            type="text"
-                                            class="form-group__form-control form-group__form-control--focus"
-                                            id="name1"
-                                            value="onFocus"
-                                    >
-                                </div>
-                                <div class="form-group form-group">
-                                    <label class="form-group__label" for="email1">{{ form.email }}</label>
-                                    <input type="email" class="form-group__form-control" id="email1">
-                                </div>
-                                <div class="form-group form-group">
-                                    <label class="form-group__label" for="message1">{{ form.message }}</label>
+                    <span>{{ call2 }}</span>
+                </div>
+            </article>
+            <aside class="col-1">
+                <div class="quote-box">
+                    <div class="quote-box__header">{{ form.title }}</div>
+                    <div class="quote-box__content">
+                        <form class="quote-form">
+                            <!--  Yep, bootstrap style -->
+                            <div class="form-group form-group">
+                                <label class="form-group__label" for="name1">{{ form.name }}</label>
+                                <input
+                                        type="text"
+                                        class="form-group__form-control form-group__form-control--focus"
+                                        id="name1"
+                                        value="onFocus"
+                                >
+                            </div>
+                            <div class="form-group form-group">
+                                <label class="form-group__label" for="email1">{{ form.email }}</label>
+                                <input type="email" class="form-group__form-control" id="email1">
+                            </div>
+                            <div class="form-group form-group">
+                                <label class="form-group__label" for="message1">{{ form.message }}</label>
                                 <textarea class="form-group__form-control" id="message1"
-                                          aria-describedby="helpBlock1"></textarea>
-                                </div>
+                                      aria-describedby="helpBlock1"></textarea>
+                            </div>
 
-                                <div class="quote-form__submit">
-                                    <button class="button">SEND</button>
-                                </div>
-                            </form>
-                        </div>
+                            <div class="quote-form__submit">
+                                <button class="button">SEND</button>
+                            </div>
+                        </form>
                     </div>
+                </div>
 
-                    <div class="quote-box">
-                        <div class="quote-box__header">{{ quote.title }}</div>
-                        <div class="quote-box__content">
-                            <div class="quote">
-                                <div class="quote__header">
-                                    {{ quote.name }}
-                                </div>
-                                <div class="quote__subheader">
-                                    {{ quote.company }}
-                                </div>
-                                <div class="quote__body">
-                                    {{ quote.body }}
-                                </div>
-                                <div class="quote__link">
-                                    <a href="#" class="button">{{ quote.learn_more }}</a>
-                                </div>
+                <div class="quote-box">
+                    <div class="quote-box__header">{{ quote.title }}</div>
+                    <div class="quote-box__content">
+                        <div class="quote">
+                            <div class="quote__header">
+                                {{ quote.name }}
+                            </div>
+                            <div class="quote__subheader">
+                                {{ quote.company }}
+                            </div>
+                            <div class="quote__body">
+                                {{ quote.body }}
+                            </div>
+                            <div class="quote__link">
+                                <a href="#" class="button">{{ quote.learn_more }}</a>
                             </div>
                         </div>
                     </div>
-                </aside>
-            </section>
-        </div>
+                </div>
+            </aside>
+        </section>
         <footer class="footer">
-            <div class="page-container">
-                <div class="row-3">
-                    <div class="col-2">
-                        <nav class="footer__nav">
-                            <ul class="main-menu">
-                                <li class="main-menu-item main-menu-item--active">
-                                    <a class="main-menu-item__link" href="#">{{ menu_home }}</a>
-                                </li>
-                                <li class="main-menu-item">
-                                    <a class="main-menu-item__link" href="#">{{ menu_services }}</a>
-                                </li>
-                                <li class="main-menu-item">
-                                    <a class="main-menu-item__link" href="#">{{ menu_company }}</a>
-                                </li>
-                                <li class="main-menu-item">
-                                    <a class="main-menu-item__link" href="#">{{ menu_careers }}</a>
-                                </li>
-                                <li class="main-menu-item">
-                                    <a class="main-menu-item__link" href="#">{{ menu_contact }}</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-1">
-                        <div class="footer__copyright col-1">{{ copyright }}</div>
-                    </div>
-                </div>
-                <div class="footer__social">
-                    <a href="#" class="social-link"><img src="img/facebook.png" alt="facebook"></a>
-                    <a href="#" class="social-link"><img src="img/twitter.png" alt="twitter"></a>
-                    <a href="#" class="social-link"><img src="img/linked_in.png" alt="linked_in"></a>
-                </div>
+            <nav class="footer__nav">
+                <ul class="main-menu">
+                    <li class="main-menu-item">
+                        <a class="main-menu-item__link" href="#">{{ menu_home }}</a>
+                    </li>
+                    <li class="main-menu-item main-menu-item--active">
+                        <a class="main-menu-item__link" href="#">{{ menu_services }}</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a class="main-menu-item__link" href="#">{{ menu_company }}</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a class="main-menu-item__link" href="#">{{ menu_careers }}</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a class="main-menu-item__link" href="#">{{ menu_contact }}</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__copyright">{{ copyright }}</div>
+            <div class="footer__social">
+                <a href="#" class="social-link"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="#" class="social-link"><img src="img/twitter.png" alt="twitter"></a>
+                <a href="#" class="social-link"><img src="img/linked_in.png" alt="linked_in"></a>
             </div>
         </footer>
     </div>

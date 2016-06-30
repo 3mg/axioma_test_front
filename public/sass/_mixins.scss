@@ -16,7 +16,7 @@ $page_widths: 900, 800, 700, 600, 400, 320, 280;
     $next_w: nth($page_widths, $i + 1);
     $next_w_max: $w - 1;
 
-    @if ($w <= $target_w) {
+    @if ($w < $target_w) {
       .w#{$w} &{
         @content;
       }

@@ -7,6 +7,8 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat');
 
+var spawn = require('child_process').spawn;
+
 gulp.task('sass', function () {
     gulp.src('./public/sass/*.scss')
         .pipe(plumber())
@@ -53,3 +55,33 @@ gulp.task('default', [
     'develop',
     'watch'
 ]);
+
+
+gulp.task('dist', function() {
+    var dist = function () {
+        gulp.src([
+            "./public/css/**/*",
+            "./public/fonts/**/*",
+            "./public/images/**/*",
+            "./public/img/**/*",
+            "./public/js/**/*",
+            "./public/*.html"
+        ], { base: "./public" }).pipe(gulp.dest('./dist/'));
+    };
+
+    spawn('rm', ['-R', 'dist'], {
+        stdio: 'inherit'
+    })
+        .on('exit', dist)
+        .on('error', function(err) { // windows... aghrrrrr :((((((
+        spawn('cmd', ['/c', 'rd /S /Q dist'], {
+            stdio: 'inherit'
+        }).on('exit', dist);
+    });
+});
+
+gulp.task('surge', ['dist'], function() {
+    spawn('npm', ['run-script', 'surge'], {
+        stdio: 'inherit'
+    });
+});

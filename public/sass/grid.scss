@@ -3,7 +3,7 @@
 $col-padding: 15px;
 
 .row-3 {
-  &:before,
+  /*&:before,
   &:after {
     content: "";
     display: table;
@@ -11,11 +11,15 @@ $col-padding: 15px;
     clear: both;
   }
   &:after {
-  }
+    clear: both;
+  }*/
 
   display: table;
+  width: 100%;
+  box-sizing: border-box;
 
-  margin: 0 -$col-padding;
+  margin-left: -$col-padding;
+  margin-right: -$col-padding;
 
   .col-1, .col-2 {
     padding: 0 $col-padding;

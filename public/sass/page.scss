@@ -15,20 +15,48 @@ a {
 .page {
   padding: 30px 0;
   background-color: #fff;
+  font-family: "Soho Gothic Pro";
+  font-size: 15px;
 }
 
-.page-lead {
-
-}
 .page-paragraph {
-
+  font: 15px "Soho Gothic Pro";
+  font-weight: 400;
+  margin: 15px 0;
+  line-height: 120%;
+  color: #333;
+}
+.page-lead {
+  @extend .page-paragraph;
+  font: 16.59px "Soho Gothic Pro Medium";
+  text-align: center;
+  padding: 25px 25px;
+  color: #333;
 }
 .page-callout {
-
+  margin: 0 35px;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 15px 0;
+  background-color: #4e97c9;
+  font: 16.59px "Soho Gothic Pro Medium";
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
+  text-align: center;
 }
 .page-phone-number {
-  &__prefix {
+  text-decoration: none;
+  font: 16.59px "Soho Gothic Pro Medium";
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
+  padding: 0 5px;
+  margin: 0 5px;
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.25);
+  border-radius: 3px;
+  @include linearGradient($button_normal_gradient_top_color, $button_normal_gradient_bottom_color);
 
+  &__prefix {
+    font: 12.59px "Soho Gothic Pro Medium";
   }
 }
 
@@ -50,7 +78,7 @@ a {
       width: #{$next_w}px;
     }
 
-    &.w#{$w} {
+    @at-root .w#{$w} & {
       width: #{$next_w}px!important;
     }
   }
