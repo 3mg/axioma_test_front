@@ -13,7 +13,7 @@ a {
 }
 
 .page {
-  padding: 30px 0;
+  padding: 30px 0 0 0;
   background-color: #fff;
   font-family: "Soho Gothic Pro";
   font-size: 15px;
@@ -49,6 +49,7 @@ a {
 }
 .page-phone-number {
   text-decoration: none;
+  white-space: nowrap;
   font: 17px "Soho Gothic Pro Medium";
   line-height: 160%;
   color: #fff;
