@@ -9,7 +9,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 
-$page_widths: 900, 800, 700, 600, 400, 320, 280;
+$page_widths: 900, 800, 700, 600, 400, 320, 280, 280;
 @mixin responsive($target_w) {
   @for $i from 1 through length($page_widths) - 1 {
     $w: nth($page_widths, $i);
