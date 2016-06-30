@@ -341,7 +341,7 @@
 .app-links-container {
   background-color: #e7e6e6;
   height: 120px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   position: relative; }
   @media screen and (max-width: 699px) {
     .app-links-container {
@@ -718,7 +718,7 @@ a {
   font-size: 15px; }
 
 .page-paragraph, .page-lead {
-  font: 15px "Soho Gothic Pro";
+  font: 15px "Tahoma";
   font-weight: 400;
   margin: 15px 0;
   line-height: 120%;

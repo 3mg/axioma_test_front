@@ -94,7 +94,7 @@ $app-links-bg-color: #e7e6e6;
 .app-links-container {
   background-color: $app-links-bg-color;
   height: 120px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 
   @include responsive(700) {
     height: auto;
