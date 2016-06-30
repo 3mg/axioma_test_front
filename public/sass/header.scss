@@ -161,6 +161,9 @@ $app-links-bg-color: #e7e6e6;
   @include responsive(700) {
     margin-bottom: 10px;
   }
+  @include responsive(320) {
+    white-space: nowrap;
+  }
 
   $app-link-size: 100px;
   $app-link-size-sm: 30px;

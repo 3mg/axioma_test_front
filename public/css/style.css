@@ -453,6 +453,11 @@
     margin-bottom: 10px; }
   .w280 .app-link {
     margin-bottom: 10px; }
+  @media screen and (max-width: 319px) {
+    .app-link {
+      white-space: nowrap; } }
+  .w280 .app-link {
+    white-space: nowrap; }
   .app-link__img {
     margin-top: -20px;
     margin-bottom: 3px;
@@ -759,6 +764,15 @@ a {
   color: #fff;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.45);
   text-align: center; }
+  @media screen and (max-width: 319px) {
+    .page-callout {
+      font: 14px "Soho Gothic Pro", Arial, sens-serif;
+      margin: 0 10px;
+      padding: 10px 20px; } }
+  .w280 .page-callout {
+    font: 14px "Soho Gothic Pro", Arial, sens-serif;
+    margin: 0 10px;
+    padding: 10px 20px; }
 
 .page-phone-number {
   text-decoration: none;
