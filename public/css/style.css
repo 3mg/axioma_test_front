@@ -461,7 +461,6 @@
   .app-link__img {
     margin-top: -20px;
     margin-bottom: 3px;
-    overflow: hidden;
     display: inline-block;
     border-radius: 50%;
     background-color: #fff;
@@ -556,10 +555,10 @@
     .app-link__img img {
       position: absolute;
       z-index: 10;
-      top: -9999px;
-      bottom: -9999px;
-      left: -9999px;
-      right: -9999px;
+      top: -99px;
+      bottom: -99px;
+      left: -99px;
+      right: -99px;
       margin: auto; }
       @media screen and (max-width: 699px) {
         .app-link__img img {

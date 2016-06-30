@@ -172,7 +172,6 @@ $app-links-bg-color: #e7e6e6;
   &__img {
     margin-top: -20px;
     margin-bottom: $app-link-border-width;
-    overflow: hidden;
 
     display: inline-block;
     border-radius: 50%;
@@ -235,10 +234,10 @@ $app-links-bg-color: #e7e6e6;
       position: absolute;
       z-index: 10;
 
-      top: -9999px;
-      bottom: -9999px;
-      left: -9999px;
-      right: -9999px;
+      top: -99px;
+      bottom: -99px;
+      left: -99px;
+      right: -99px;
       margin: auto;
 
       @include responsive(700) {
