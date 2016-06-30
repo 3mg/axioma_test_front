@@ -85,17 +85,3 @@ gulp.task('surge', ['dist'], function() {
         stdio: 'inherit'
     });
 });
-
-
-var fontgen = require('gulp-fontgen');
-gulp.task('fontgen', function() {
-    return gulp.src([
-        "_design/Tahoma.ttf",
-        "_design/SohoGothicPro-Regular.otf",
-        "_design/SohoGothicPro-Medium.otf",
-        "_design/SohoGothicPro-Light.otf"
-    ])
-        .pipe(fontgen({
-            dest: "./public/fonts/"
-        }));
-});

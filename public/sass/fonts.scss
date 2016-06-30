@@ -1,4 +1,50 @@
+/*
 @font-face {
   src: url('../fonts/defaultgothicbgauge-webfont.eot');
-  src: url('../fonts/defaultgothicbgauge-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/defaultgothicbgauge-webfont.woff') format('woff'), url('../fonts/defaultgothicbgauge-webfont.ttf') format('truetype'), url('../fonts/defaultgothicbgauge-webfont.svg') format('svg');
+  src: url('../fonts/defaultgothicbgauge-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/../fonts/defaultgothicbgauge-webfont.woff') format('woff'), url('../fonts/../fonts/defaultgothicbgauge-webfont.ttf') format('truetype'), url('../fonts/../fonts/defaultgothicbgauge-webfont.svg') format('svg');
+}*/
+
+@font-face {
+  font-family: 'Soho Gothic Pro';
+  src: url('../fonts/SohoGothicPro-Regular.eot');
+  src: url('../fonts/SohoGothicPro-Regular.woff') format('woff'),
+  url('../fonts/SohoGothicPro-Regular.ttf') format('truetype'),
+  url('../fonts/SohoGothicPro-Regular.svg#SohoGothicPro-Regular') format('svg'),
+  url('../fonts/SohoGothicPro-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'Soho Gothic Pro Medium';
+  src: url('../fonts/SohoGothicPro-Medium.eot');
+  src: url('../fonts/SohoGothicPro-Medium.woff') format('woff'),
+  url('../fonts/SohoGothicPro-Medium.ttf') format('truetype'),
+  url('../fonts/SohoGothicPro-Medium.svg#SohoGothicPro-Medium') format('svg'),
+  url('../fonts/SohoGothicPro-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Soho Gothic Pro Light';
+  src: url('../fonts/SohoGothicPro-Light.eot');
+  src: url('../fonts/SohoGothicPro-Light.woff') format('woff'),
+  url('../fonts/SohoGothicPro-Light.ttf') format('truetype'),
+  url('../fonts/SohoGothicPro-Light.svg#SohoGothicPro-Light') format('svg'),
+  url('../fonts/SohoGothicPro-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tahoma';
+  src: url('../fonts/Tahoma.eot');
+  src: url('../fonts/Tahoma.woff') format('woff'),
+  url('../fonts/Tahoma.ttf') format('truetype'),
+  url('../fonts/Tahoma.svg#Tahoma') format('svg'),
+  url('../fonts/Tahoma.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
